@@ -1,5 +1,4 @@
 "use client"
-
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
@@ -11,7 +10,7 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardThree from '@/components/sections/testimonial/TestimonialCardThree';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Award, Briefcase, Linkedin, Quote, Star, TrendingUp, Twitter, Users, Zap } from "lucide-react";
+import { Zap, Briefcase, TrendingUp, Users, Award, Linkedin, Twitter, Star, Quote } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -51,7 +50,7 @@ export default function LandingPage() {
             { text: "Explore Portfolio", href: "portfolio" },
             { text: "Learn More", href: "about" }
           ]}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092538129-8b9so3rq.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092687304-s3lto5u9.jpg"
           imageAlt="Venture capital and tech startup environment"
           showDimOverlay={true}
         />
@@ -83,24 +82,24 @@ export default function LandingPage() {
               id: 1,
               title: "Seed Stage Investment",
               description: "We identify and partner with exceptional founders operating in the B2B digital space at their earliest stages of growth",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092538833-2ead07to.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092687887-sj5ymk5c.jpg",
               imageAlt: "Seed stage founders meeting and collaboration"
             },
             {
               id: 2,
               title: "Strategic Support",
               description: "Beyond capital, we provide hands-on mentorship, industry connections, and strategic guidance to accelerate growth",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092539785-tt16ivii.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092688387-0ggks406.jpg",
               imageAlt: "Strategic business planning and support"
             },
             {
               id: 3,
               title: "Portfolio Development",
               description: "We actively manage our portfolio, helping companies navigate challenges and capitalize on market opportunities",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092540524-dpw70rj9.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092688942-avrbvaep.jpg",
               imageAlt: "Portfolio management and analytics"
             }
-          ]
+          ]}
         />
       </div>
 
@@ -116,7 +115,7 @@ export default function LandingPage() {
               id: "1",
               name: "Platform Intelligence",
               price: "Series A",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092541369-se0sytja.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092689617-fdkk15jl.jpg",
               imageAlt: "Platform Intelligence B2B SaaS solution",
               initialQuantity: 1
             },
@@ -124,7 +123,7 @@ export default function LandingPage() {
               id: "2",
               name: "Digital Commerce",
               price: "Series A",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092542610-cmsh6xz9.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092690306-ixfudyvq.jpg",
               imageAlt: "Digital Commerce platform for enterprises",
               initialQuantity: 1
             },
@@ -132,13 +131,14 @@ export default function LandingPage() {
               id: "3",
               name: "Enterprise Solutions",
               price: "Series A",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092543323-ts7izbdg.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092690875-4a3qur5m.jpg",
               imageAlt: "Enterprise B2B technology solutions",
               initialQuantity: 1
             }
-          ]
+          ]}
           gridVariant="three-columns-all-equal-width"
           animationType="slide-up"
+          buttons={[]}
         />
       </div>
 
@@ -174,9 +174,10 @@ export default function LandingPage() {
               title: "Success Rate",
               value: "85%"
             }
-          ]
+          ]}
           gridVariant="four-items-2x2-equal-grid"
           animationType="scale-rotate"
+          buttons={[]}
         />
       </div>
 
@@ -193,7 +194,7 @@ export default function LandingPage() {
               name: "Marco Rossi",
               role: "Founder & Managing Partner",
               description: "Venture capital expert with 15+ years in B2B digital investments and portfolio management",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092544095-2v08xgr0.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092691407-xbzwler5.jpg",
               imageAlt: "Marco Rossi, Founder & Managing Partner",
               socialLinks: [
                 { icon: Linkedin, url: "https://linkedin.com" },
@@ -205,7 +206,7 @@ export default function LandingPage() {
               name: "Giulia Ferrari",
               role: "Investment Director",
               description: "Strategic investor focusing on early-stage B2B companies with disruptive technologies",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092544893-6cg71jvz.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/tmp/business-executive-professional-headshot-1764092707920-fd07c63f.jpg",
               imageAlt: "Giulia Ferrari, Investment Director",
               socialLinks: [
                 { icon: Linkedin, url: "https://linkedin.com" }
@@ -216,7 +217,7 @@ export default function LandingPage() {
               name: "Andrea Bianchi",
               role: "Operations Partner",
               description: "Expert in scaling operations and financial management for growing tech ventures",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092545600-tzy4xctt.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092708499-g9ybq2yt.jpg",
               imageAlt: "Andrea Bianchi, Operations Partner",
               socialLinks: [
                 { icon: Linkedin, url: "https://linkedin.com" }
@@ -227,15 +228,16 @@ export default function LandingPage() {
               name: "Laura Conti",
               role: "Business Development Lead",
               description: "Connects portfolio companies with strategic partnerships and market opportunities",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092546350-jolh3tbl.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092708996-rky2g0y1.jpg",
               imageAlt: "Laura Conti, Business Development Lead",
               socialLinks: [
                 { icon: Linkedin, url: "https://linkedin.com" }
               ]
             }
-          ]
+          ]}
           gridVariant="four-items-2x2-equal-grid"
           animationType="blur-reveal"
+          buttons={[]}
         />
       </div>
 
@@ -252,7 +254,7 @@ export default function LandingPage() {
               name: "Alex Chen",
               handle: "@alexchen_founder",
               testimonial: "The Techshop didn't just provide capital, they provided strategic guidance that accelerated our growth by months. Their hands-on approach made all the difference.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092547075-7sbm0bv2.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092721393-k0i6r5s1.jpg",
               imageAlt: "Alex Chen, Founder",
               icon: Quote
             },
@@ -261,7 +263,7 @@ export default function LandingPage() {
               name: "Sofia Martinez",
               handle: "@sofiamartinez",
               testimonial: "Exceptional partners who truly understand the B2B digital space. Their network and expertise have opened doors we couldn't have accessed alone.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092547755-9otcb3w1.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092722084-njvyf41f.jpg",
               imageAlt: "Sofia Martinez, CEO",
               icon: Quote
             },
@@ -270,7 +272,7 @@ export default function LandingPage() {
               name: "Thomas Wagner",
               handle: "@twagner",
               testimonial: "The patient capital approach is refreshing. They're invested in our long-term success, not just quick exits. Perfect partnership for our growth stage.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092548510-xloboagl.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092723032-4rshn21k.jpg",
               imageAlt: "Thomas Wagner, Co-Founder",
               icon: Quote
             },
@@ -279,12 +281,13 @@ export default function LandingPage() {
               name: "Priya Patel",
               handle: "@priyap_tech",
               testimonial: "Working with The Techshop transformed how we approach strategic planning. Their insights have been invaluable for scaling our B2B platform.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092549190-lmvn84m5.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092723603-hsi11cx9.jpg",
               imageAlt: "Priya Patel, Founder",
               icon: Quote
             }
-          ]
+          ]}
           animationType="opacity"
+          buttons={[]}
         />
       </div>
 
@@ -312,7 +315,7 @@ export default function LandingPage() {
             rows: 5,
             required: true
           }}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092549956-4ojpa56p.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092724131-7gxhhwln.jpg"
           imageAlt="Modern office meeting space"
           mediaPosition="right"
           buttonText="Send Message"
@@ -346,7 +349,7 @@ export default function LandingPage() {
                 { label: "Compliance", href: "https://techshop.capital/compliance" }
               ]
             }
-          ]
+          ]}
           copyrightText="© 2025 The Techshop SGR S.p.A. | Iscritta al n. 194 dell'Albo delle Società di Gestione del Risparmio"
         />
       </div>

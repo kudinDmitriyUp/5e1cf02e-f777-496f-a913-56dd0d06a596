@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092538129-8b9so3rq.jpg",
+        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092687304-s3lto5u9.jpg",
         alt: "The Techshop - Venture Capital"
       }
     ]
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Techshop - Venture Capital Partners",
     description: "Patient and active capital for early-stage B2B digital ventures",
-    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092538129-8b9so3rq.jpg"]
+    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764092687304-s3lto5u9.jpg"]
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <PostHogWrapper>
         <body
-          className={notoSans.variable}
+          className={`${notoSans.variable} antialiased`}
         >
           <Tag />
           {children}
